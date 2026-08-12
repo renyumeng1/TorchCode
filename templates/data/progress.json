@@ -1,0 +1,20 @@
+{
+  "relu": {
+    "status": "solved",
+    "solved_at": "2026-08-12T23:47:01.348055",
+    "best_time": 0.03872569999657571,
+    "attempts": 1
+  },
+  "softmax": {
+    "status": "solved",
+    "solved_at": "2026-08-12T23:51:03.964704",
+    "best_time": 0.007962999981828034,
+    "attempts": 1
+  },
+  "cross_entropy": {
+    "status": "solved",
+    "solved_at": "2026-08-12T23:55:52.231264",
+    "best_time": 0.019901899970136583,
+    "attempts": 1
+  }
+}
