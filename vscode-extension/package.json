@@ -1,0 +1,110 @@
+{
+  "name": "torchcode-vscode",
+  "displayName": "TorchCode Practice",
+  "description": "Practice TorchCode problems, track progress, and run the judge without leaving VS Code.",
+  "version": "0.1.3",
+  "publisher": "torchcode",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duoan/TorchCode.git"
+  },
+  "extensionKind": [
+    "workspace"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Education",
+    "Other"
+  ],
+  "keywords": [
+    "pytorch",
+    "jupyter",
+    "notebook",
+    "practice",
+    "torchcode"
+  ],
+  "activationEvents": [
+    "onView:torchcode.dashboard",
+    "onCommand:torchcode.openDashboard",
+    "onCommand:torchcode.openWelcome",
+    "onCommand:torchcode.runTests",
+    "onCommand:torchcode.showHint"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "torchcode",
+          "title": "TorchCode",
+          "icon": "media/torchcode.svg"
+        }
+      ]
+    },
+    "views": {
+      "torchcode": [
+        {
+          "type": "webview",
+          "id": "torchcode.dashboard",
+          "name": "练习进度"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "torchcode.openDashboard",
+        "title": "TorchCode: 打开练习进度"
+      },
+      {
+        "command": "torchcode.openWelcome",
+        "title": "TorchCode: 打开题目总览"
+      },
+      {
+        "command": "torchcode.runTests",
+        "title": "TorchCode: 运行当前题目的测试"
+      },
+      {
+        "command": "torchcode.showHint",
+        "title": "TorchCode: 查看当前题目的提示"
+      }
+    ],
+    "configuration": {
+      "title": "TorchCode",
+      "properties": {
+        "torchcode.workspaceRoot": {
+          "type": "string",
+          "default": "",
+          "scope": "window",
+          "description": "TorchCode 仓库根目录。留空时自动在已打开的工作区文件夹中查找。"
+        },
+        "torchcode.pythonPath": {
+          "type": "string",
+          "default": "",
+          "scope": "window",
+          "description": "运行 TorchCode 判题所用的 Python 解释器。留空时优先使用仓库的 .venv。"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "prepare:webview-assets": "node ./scripts/copy-webview-assets.mjs",
+    "compile": "npm run prepare:webview-assets && tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile",
+    "package": "vsce package",
+    "check": "tsc --noEmit -p ./"
+  },
+  "dependencies": {
+    "katex": "^0.16.22",
+    "markdown-it": "^14.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.2.0",
+    "typescript": "^5.4.0"
+  }
+}

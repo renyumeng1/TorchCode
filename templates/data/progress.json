@@ -106,5 +106,21 @@
     "solved_at": "2026-08-13T17:06:13.275702",
     "best_time": 0.0775011241203174,
     "attempts": 1
+  },
+  "causal_attention": {
+    "status": "solved",
+    "attempts": 3,
+    "solved_at": "2026-08-13T22:24:11.920529",
+    "best_time": 0.010647799999787821
+  },
+  "rope": {
+    "status": "attempted",
+    "attempts": 1
+  },
+  "gqa": {
+    "status": "solved",
+    "solved_at": "2026-08-13T23:10:25.421493",
+    "best_time": 0.009972799999559356,
+    "attempts": 2
   }
 }

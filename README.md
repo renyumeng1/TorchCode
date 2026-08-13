@@ -119,6 +119,23 @@ For a modern, standalone coding experience with an integrated IDE and dual-pane 
 
 ![TorchCode UI Preview](assets/ui_preview.png)
 
+### Option 4 — VS Code extension
+
+The repository includes a local VS Code extension in [`vscode-extension`](vscode-extension).
+It shows your solved problems, links to the same notebook catalog as
+`00_welcome.ipynb`, displays the active problem statement, and runs tests or
+hints in the VS Code sidebar.
+
+```bash
+cd vscode-extension
+npm install
+npm run package
+```
+
+Install the generated `.vsix` with **Extensions: Install from VSIX...**, then
+open this repository in VS Code and select the TorchCode icon in the Activity
+Bar. The extension uses the repository `.venv` automatically when available.
+
 ---
 
 ## 📋 Problem Set
