@@ -16,5 +16,95 @@
     "solved_at": "2026-08-12T23:55:52.231264",
     "best_time": 0.019901899970136583,
     "attempts": 1
+  },
+  "dropout": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-08-13T09:35:50.642728",
+    "best_time": 0.005996125051751733
+  },
+  "embedding": {
+    "status": "solved",
+    "solved_at": "2026-08-13T09:49:07.621636",
+    "best_time": 0.06606900098267943,
+    "attempts": 1
+  },
+  "gelu": {
+    "status": "solved",
+    "solved_at": "2026-08-13T09:54:46.681886",
+    "best_time": 0.07628091610968113,
+    "attempts": 1
+  },
+  "weight_init": {
+    "status": "solved",
+    "solved_at": "2026-08-13T10:34:19.272001",
+    "best_time": 0.013205333147197962,
+    "attempts": 1
+  },
+  "gradient_clipping": {
+    "status": "solved",
+    "solved_at": "2026-08-13T10:47:22.897634",
+    "best_time": 0.026110792066901922,
+    "attempts": 1
+  },
+  "gradient_accumulation": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-08-13T11:17:29.686618",
+    "best_time": 0.01447845809161663
+  },
+  "linear": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-08-13T11:36:31.013323",
+    "best_time": 0.027928957948461175
+  },
+  "layernorm": {
+    "status": "solved",
+    "solved_at": "2026-08-13T11:45:56.162193",
+    "best_time": 0.04189054179005325,
+    "attempts": 1
+  },
+  "batchnorm": {
+    "status": "solved",
+    "attempts": 6,
+    "solved_at": "2026-08-13T13:57:23.248672",
+    "best_time": 0.012146207969635725
+  },
+  "rmsnorm": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-08-13T14:10:48.926539",
+    "best_time": 0.0028644991107285023
+  },
+  "mlp": {
+    "status": "solved",
+    "attempts": 2,
+    "solved_at": "2026-08-13T14:24:47.381905",
+    "best_time": 0.04285016597714275
+  },
+  "conv2d": {
+    "status": "solved",
+    "solved_at": "2026-08-13T14:46:04.287369",
+    "best_time": 0.12388729013036937,
+    "attempts": 1
+  },
+  "cross_attention": {
+    "status": "solved",
+    "solved_at": "2026-08-13T16:16:49.024308",
+    "best_time": 0.06285404309164733,
+    "attempts": 1
+  },
+  "attention": {
+    "status": "solved",
+    "solved_at": "2026-08-13T16:37:01.747657",
+    "best_time": 0.049030374037101865,
+    "attempts": 1
+  },
+  "mha": {
+    "status": "solved",
+    "solved_at": "2026-08-13T17:06:13.275702",
+    "best_time": 0.0775011241203174,
+    "attempts": 1
   }
 }
